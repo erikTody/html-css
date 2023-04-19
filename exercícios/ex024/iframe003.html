@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Iframes</title>
+	<style>
+		#tela {
+			display: block;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Testando iframes</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo iure ullam aspernatur sequi, magnam, in enim vel quasi reprehenderit eligendi, molestiae, veniam facere. In vel omnis, expedita labore ea necessitatibus? 
+	
+	<ul>
+		<li><a href="pagina001.html" target="frame">Pagina 1</a></li>
+		<li><a href="pagina002.html" target="frame">Pagina 2</a></li>
+		<li><a href="pagina003.html" target="frame">Pagina 3</a></li>
+	</ul>
+	
+	Lorem ipsumdolor sit amet, consectetur adipisicing elit. Culpa officiis, alias quod nesciunt vitae consequatur, similique eaque ipsum necessitatibus molestiae ad. Suscipit pariatur consequatur odio nam ea vel? Qui, voluptatem.</p>
+	
+	<!-- usando o parâmetro "srcdoc" vc pode colocar html dentro do iframe. -->
+	
+	<iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> " frameborder="1" height="300" width="300">
+		<p>Infelizmente seu navegador não é compatível com isso.</p>
+	</iframe>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat dolorum soluta quisquam mollitia voluptas consequatur eum ratione officiis alias. Quasi autem eius possimus vero consequuntur doloremque corporis veritatis nam?</p>
+</body>
+</html>
