@@ -1,2 +1,2 @@
 # html-css
- <a href="eriktody.github.io/html-css/exercícios/ex003/index.html">Execute o exercicio 003</a>
+ <a href="eriktody.github.io/html-css/exercícios/ex024/iframe004.html">Execute o exercicio 024</a>
