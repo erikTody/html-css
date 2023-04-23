@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Formulário</title>
+</head>
+<body>
+	<form action="cadastro.php" method="get" accept-charset="utf-8"autocomplete="on">
+		
+
+	<P>
+		<label for="nvl">Nivel de Ódio</label>
+		<input type="range" name="nvl" id="nvl" min="0" max="10" value="5"
+		oninput="nvl.innerHTML = Number(nvl.value)"/>
+		<output id="nvl">0</output>
+	</P>
+	<p>
+		<input type="submit" value="Enviar
+	</p>
+		</form>
+</body>
+</html>
