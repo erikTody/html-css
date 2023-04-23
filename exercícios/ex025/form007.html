@@ -10,11 +10,31 @@
 	<form action="cadastro.php" method="get" accept-charset="utf-8">
 		<label for="est">Estado</label>
 		<select name="Estado" id="est">
-		 <optgroup>
+		 <optgroup label="Região Sudeste">
 		 	<option value="MG">Minas Gerais</option>
-		 
+		  <option value="SP">São Paulo</option>
+		  <option value="RJ">Rio De Janeiro</option>
+		 </optgroup>
+		 <optgroup label="Região Nordeste">
+		 	<option value="PB">Paraíba</option>
+		 	<option value="PE">Pernambuco</option>
+		 	<option value="RN">Rio Grande Do Norte</option>
 		 </optgroup>
 		</select>
+		<P>
+			<label for="prof">Profissão</label>
+		<input type="text" name="prof" id="prof" list="lstprof"/>
+		<datalist id="lstprof">
+		 <option>Programador</option>
+		 <option>Desenvolvedor</option>
+		 <option>Médico</option>
+		 <option>Policial</option>
+		</datalist>
+		</P>
+		<p>
+			<label for="msg">Mensagem</label><br>
+			<textarea name="msg" id=msg rows="10" cols="40"></textarea>
+		</p>
 		<P>
 			<input type="submit" value="Enviar"/>
 			<input type="reset" value="Limpar"/>
