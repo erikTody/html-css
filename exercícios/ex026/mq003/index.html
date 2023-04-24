@@ -5,14 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Media Query</title>
-	<link rel="stylesheet" href="styles/style.css" media="all" />
-	<link rel="stylesheet" href="styles/retrato.css"  media="screen and (orientation: portrait)" />
-	<link rel="stylesheet" href="styles/paisagem.css" media="screen and (orientation: landscape)" />
 	<style>
+	/* Declarações para modo retrato */
 		@media screen and (orientation: portrait) {
 			body {
-				background-image: url(imagens/cev-landscape.jpg);
+			  background: darkgreen;
+				background-image: url(../imagens/cev-portrait.jpg);
 			}
+		}
+		
+		/* Declarações para modo paisagem */
+		@media screen and (orientation: landscape) {
+		  body {
+		    background-color: darkred;
+		  }
 		}
 	</style>
 </head>
