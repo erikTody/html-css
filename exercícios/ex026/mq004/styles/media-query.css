@@ -9,11 +9,27 @@ tablet: >= 768px
 desktop: >= 1024px
 Grandes telas >= 1240px
 */
+
 /* impressão */
 @media print {
-  body {
+
+    * {
+      font-family:' Courier New', Courier, Monospace;
+    }
     
-  }
+    main {
+      border: 2px solid black;
+    }
+    
+    main::after {
+      content: 'Essa impressão foi feita do site www.cursoemvideo.com';
+      text-decoration: overline;
+    }
+    
+    main h1 {
+      text-shadow: none;
+      ccolor: black;
+    }
 }
 
 /* Tablet */
